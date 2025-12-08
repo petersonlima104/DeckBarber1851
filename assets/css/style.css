@@ -1,0 +1,333 @@
+/* ================================
+   ESTILO GERAL
+================================ */
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #111;
+  color: #eee;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================================
+   LOGO E TÍTULO
+================================ */
+.logo {
+  width: 48px;
+  height: auto;
+}
+
+.brand-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.brand-year {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* ================================
+   BANNER PRINCIPAL
+================================ */
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Botões do banner */
+.hero .btn {
+  margin: 10px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+}
+
+/* ================================
+   BOTÃO FLUTUANTE WHATSAPP
+================================ */
+.whatsapp-float {
+  position: fixed;
+  width: 58px;
+  height: 58px;
+  bottom: 22px;
+  right: 22px;
+  background: #25d366;
+  color: white;
+  border-radius: 50%;
+  font-size: 32px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* ================================
+   CARDS DE PRÉVIA DAS PÁGINAS
+================================ */
+.card-preview {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  transition: all 0.25s;
+}
+
+.card-preview:hover {
+  transform: translateY(-6px);
+  border-color: #555;
+}
+
+.card-preview img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* ================================
+   TABELA DE SERVIÇOS
+================================ */
+.services-table td,
+.services-table th {
+  padding: 14px 10px;
+}
+
+.services-table tr {
+  border-bottom: 1px solid #333;
+}
+
+.services-table tr:hover {
+  background: #1d1d1d;
+}
+
+/* ================================
+   Mais serviços
+================================ */
+
+.more-services {
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  padding: 50px 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(197, 157, 95, 0.4); /* dourado suave */
+  color: #fff;
+}
+
+.more-services h2 {
+  color: #c59d5f; /* dourado barbearia */
+  font-weight: 600;
+}
+
+.more-services p {
+  color: #ddd;
+  font-size: 1.1rem;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.more-services .btn {
+  margin-top: 10px;
+  border-color: #c59d5f;
+  color: #c59d5f;
+  padding: 12px 30px;
+}
+
+.more-services .btn:hover {
+  background-color: #c59d5f;
+  color: #111;
+}
+
+/* ================================
+   GALERIA
+================================ */
+.gallery-grid img {
+  width: 100%; /* garante que a imagem ocupa toda a largura do card */
+  height: 400px; /* ajuste a altura como desejar */
+  object-fit: cover; /* corta proporcionalmente para não distorcer */
+  transition: transform 0.3s;
+  border-radius: 8px; /* opcional, mantém bordas arredondadas */
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.04);
+}
+
+/* ======== QUEM SOMOS ======== */
+
+.history-img {
+  width: 100%;
+  max-height: 500px; /* diminui a verticalidade */
+  object-fit: cover; /* corta sem distorcer */
+}
+
+/* ======== CONTATO ======== */
+
+body {
+  background-color: #0d0d0d !important;
+  color: #f1f1f1 !important;
+}
+
+.section-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-left: 5px solid #d4a017;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.contact-card {
+  background: #1b1b1b;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: scale(1.02);
+  background: #242424;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  display: block;
+  padding: 10px 0;
+}
+
+.contact-link:hover {
+  color: #d4a017;
+}
+
+.map-box img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.map-box img:hover {
+  transform: scale(1.02);
+}
+
+.floating-whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+}
+
+.floating-whatsapp img {
+  width: 65px;
+  transition: 0.3s;
+}
+
+.floating-whatsapp img:hover {
+  transform: scale(1.05);
+}
+
+/* ================================
+   FOOTER
+================================ */
+.footer {
+  background: #000;
+  color: #aaa;
+}
+
+.footer a {
+  color: #777;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.service-title {
+  color: #d4a017;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.service-description {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.service-block {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #333;
+}
+
+.nav-social a {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.nav-social a:hover {
+  color: #d4af37; /* Dourado */
+}
+
+.gallery-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+  .card-preview img {
+    height: 150px;
+  }
+}
