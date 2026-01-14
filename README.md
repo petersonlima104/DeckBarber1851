@@ -3,6 +3,11 @@
 Website institucional desenvolvido para a **Deck Barber 1851**, uma barbearia moderna que une tradição, estilo e atendimento de qualidade.  
 O site foi criado com foco em **performance**, **design responsivo** e **experiência do usuário**, estando pronto para hospedagem na internet.
 
+
+O Site está **hospedado e disponível para visualização pública** no link abaixo 👇  
+
+👉 **Acesse aqui:** [🌎 Deck Barber Online](https://deckbarber1851.com/)
+
 ---
 
 ## 🌐 Visão Geral
